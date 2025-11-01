@@ -1,0 +1,562 @@
+{
+  "summary": {
+    "document_path": "/Users/rockramsri/Documents/Smart legal filler/Main-backend/document_storage/c5f68677-e2c1-46f3-b0ac-94c1321fa396_original.docx",
+    "total_placeholders_found": 11,
+    "unique_placeholders": [
+      "[COMPANY]",
+      "[Company Name]",
+      "[Date of Safe]",
+      "[Governing Law Jurisdiction]",
+      "[Investor Name]",
+      "[State of Incorporation]",
+      "[_____________]",
+      "[name]",
+      "[title]"
+    ],
+    "unique_placeholder_count": 9,
+    "placeholders_by_type": {
+      "[Company Name]": 2,
+      "[Investor Name]": 1,
+      "[_____________]": 2,
+      "[Date of Safe]": 1,
+      "[State of Incorporation]": 1,
+      "[Governing Law Jurisdiction]": 1,
+      "[COMPANY]": 1,
+      "[name]": 1,
+      "[title]": 1
+    },
+    "placeholders_by_paragraph": {
+      "2": [
+        "[Company Name]"
+      ],
+      "6": [
+        "[Investor Name]",
+        "[_____________]",
+        "[Date of Safe]",
+        "[Company Name]",
+        "[State of Incorporation]"
+      ],
+      "8": [
+        "[_____________]"
+      ],
+      "66": [
+        "[Governing Law Jurisdiction]"
+      ],
+      "72": [
+        "[COMPANY]"
+      ],
+      "75": [
+        "[name]"
+      ],
+      "76": [
+        "[title]"
+      ]
+    },
+    "document_statistics": {
+      "total_paragraphs": 79,
+      "total_tables": 0,
+      "estimated_total_pages": 3
+    }
+  },
+  "placeholders": [
+    {
+      "unique_id": "PLACEHOLDER_0001",
+      "match": "[Company Name]",
+      "match_type": "paragraph",
+      "paragraph_index": 2,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 0,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "[Company Name]",
+      "sentence_after": null,
+      "paragraph_context_before": null,
+      "paragraph_context_after": null,
+      "surrounding_text": "[Company Name]",
+      "match_position_in_context": 0,
+      "run_information": [
+        {
+          "run_index": 0,
+          "text": "[Company Name]",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "CENTER (1)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "[Company Name]",
+      "paragraph_length": 14,
+      "llm_context": "This placeholder is for the full legal name of the company issuing the SAFE. Its purpose is to clearly identify the legal entity entering into the agreement as the 'Company'. This is a critical field for establishing the parties to the contract. The user should be asked: 'What is the full legal name of the company issuing this SAFE, exactly as registered with the state of incorporation?' The value represents the official, registered name of the startup or company. Expected data type is text (name). It must be the exact legal name, without abbreviations unless they are part of the legal name. Examples include: 'Innovate Solutions Inc.', 'Tech Ventures LLC', 'Global Innovations Corp.'. Legally, an incorrect company name could lead to issues with the validity of the SAFE or disputes over the identity of the contracting party. This field is directly related to PLACEHOLDER_0005 (Company Name repeated), PLACEHOLDER_0006 (State of Incorporation), and PLACEHOLDER_0009 (Company name in signature block). Validation should ensure it's a non-empty string and ideally consistent across all 'Company Name' placeholders.",
+      "is_filled": true,
+      "value": "Techsource LLC",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user provided 'Techsoure LLC' which is a company name. This matches the llm_context for PLACEHOLDER_0001, which expects the full legal name of the company. Corrected spelling of 'Techsoure' to 'Techsource'.",
+      "filled_at": "2025-10-31 18:55:06.544171"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0002",
+      "match": "[Investor Name]",
+      "match_type": "paragraph",
+      "paragraph_index": 6,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 51,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "sentence_after": null,
+      "paragraph_context_before": "(Simple Agreement for Future Equity)",
+      "paragraph_context_after": "This Safe is one of the forms available at  and the Company and the Investor agree that neither one has modified the form, except to fill in blanks and bracketed terms.",
+      "surrounding_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company N",
+      "match_position_in_context": 51,
+      "run_information": [
+        {
+          "run_index": 7,
+          "text": "[Investor Name",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 8,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "paragraph_length": 348,
+      "llm_context": "This placeholder requires the full legal name of the individual or entity making the investment. Its purpose is to identify the 'Investor' in the SAFE agreement, who is providing the 'Purchase Amount'. The user should be asked: 'What is the full legal name of the individual or entity making this investment? Please specify if the investor is an individual or a legal entity (e.g., LLC, Corporation, Trust).' The value represents the official, registered name of the investor. Expected data type is text (name). It must be the exact legal name of the investor. Examples include: 'Alice Smith', 'Venture Capital Fund I, LP', 'The John Doe Family Trust'. Legally, accurately identifying the investor is crucial for establishing ownership of the SAFE and for the investor's representations (e.g., being an accredited investor) to be valid. There are no direct related fields in the provided context, but it defines the 'Investor' party throughout the document. Validation should ensure it's a non-empty string.",
+      "is_filled": true,
+      "value": "Sriram Madhiyalagan",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user explicitly states 'i am sriram madhiyalagan' and identifies as the 'investor'. Corrected capitalization for proper name.",
+      "filled_at": "2025-10-31 18:56:30.658310"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0003",
+      "match": "[_____________]",
+      "match_type": "paragraph",
+      "paragraph_index": 6,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 88,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "sentence_after": null,
+      "paragraph_context_before": "(Simple Agreement for Future Equity)",
+      "paragraph_context_after": "This Safe is one of the forms available at  and the Company and the Investor agree that neither one has modified the form, except to fill in blanks and bracketed terms.",
+      "surrounding_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corp",
+      "match_position_in_context": 88,
+      "run_information": [
+        {
+          "run_index": 13,
+          "text": "$[_____________",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 14,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "paragraph_length": 348,
+      "llm_context": "This placeholder is for the 'Purchase Amount', which is the exact monetary investment made by the Investor. Its purpose is to specify the principal sum paid by the Investor for the SAFE. The user should be asked: 'What is the exact dollar amount (in numbers) that the investor is paying for this SAFE?' The value represents the total cash investment made by the Investor. Expected data type is currency (number). It must be a positive numerical value, typically expressed in USD, and usually an integer or a value with two decimal places. Examples include: '25,000', '100,000', '500,000.00'. This amount is fundamental to the SAFE as it determines the basis for conversion into shares or payout in a liquidity/dissolution event. It is related to PLACEHOLDER_0007 (Post-Money Valuation Cap) as both affect the conversion economics. Validation should ensure it is a positive numerical value, formatted as currency.",
+      "is_filled": true,
+      "value": "1,000,000",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user provided '1000000' which is a positive numerical value, matching the 'Purchase Amount' described in the llm_context for PLACEHOLDER_0003, which expects a currency (number). The value has been formatted with a comma for readability.",
+      "filled_at": "2025-10-31 18:57:52.872807"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0004",
+      "match": "[Date of Safe]",
+      "match_type": "paragraph",
+      "paragraph_index": 6,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 140,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "sentence_after": null,
+      "paragraph_context_before": "(Simple Agreement for Future Equity)",
+      "paragraph_context_after": "This Safe is one of the forms available at  and the Company and the Investor agree that neither one has modified the form, except to fill in blanks and bracketed terms.",
+      "surrounding_text": "payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the",
+      "match_position_in_context": 100,
+      "run_information": [
+        {
+          "run_index": 20,
+          "text": "[Date of Safe]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "paragraph_length": 348,
+      "llm_context": "This placeholder is for the 'Date of Safe', which is the effective date of the agreement. Its purpose is to establish when the SAFE agreement officially commences and when the investment is considered to have been made. The user should be asked: 'What is the effective date of this SAFE agreement?' The value represents the specific date the agreement becomes legally binding. Expected data type is date. It must be a valid date, typically formatted as MM/DD/YYYY or YYYY-MM-DD. Examples include: 'January 15, 2024', '2024-01-15', '01/15/2024'. This date is important for record-keeping, potential tax implications, and for determining the sequence of investments if multiple SAFEs are issued over time. While not directly linked to other placeholders in the provided text, it's contextually related to the 'Purchase Amount' and 'Investor Name' as part of the initial transaction details. Validation should ensure it is a valid date in an acceptable format.",
+      "is_filled": true,
+      "value": "05/17/2024",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user's response 'Today' directly refers to the current date, which is the expected data type for the 'Date of Safe' placeholder. The value has been formatted to MM/DD/YYYY.",
+      "filled_at": "2025-10-31 18:58:21.271933"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0005",
+      "match": "[Company Name]",
+      "match_type": "paragraph",
+      "paragraph_index": 6,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 156,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "sentence_after": null,
+      "paragraph_context_before": "(Simple Agreement for Future Equity)",
+      "paragraph_context_after": "This Safe is one of the forms available at  and the Company and the Investor agree that neither one has modified the form, except to fill in blanks and bracketed terms.",
+      "surrounding_text": "stor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certai",
+      "match_position_in_context": 100,
+      "run_information": [
+        {
+          "run_index": 23,
+          "text": "[Company Name",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 24,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "paragraph_length": 348,
+      "llm_context": "This placeholder is another instance of the 'Company Name'. Its purpose is to reiterate the full legal name of the issuing company within the introductory paragraph, explicitly stating which company issues the right to shares. The user should be asked: 'Please confirm the full legal name of the company for this section. It should be consistent with the name provided earlier.' The value represents the official, registered name of the startup or company. Expected data type is text (name). It must be identical to the value provided for PLACEHOLDER_0001. Examples include: 'Innovate Solutions Inc.', 'Tech Ventures LLC', 'Global Innovations Corp.'. Consistency across all instances of the company name is legally important to avoid ambiguity. This field is directly related to PLACEHOLDER_0001 (Company Name), PLACEHOLDER_0006 (State of Incorporation), and PLACEHOLDER_0009 (Company name in signature block). Validation should ensure it's a non-empty string and matches PLACEHOLDER_0001 exactly.",
+      "is_filled": true,
+      "value": "RadAR",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user explicitly states 'my company is radAR'. Corrected capitalization for company name.",
+      "filled_at": "2025-10-31 18:56:30.658441"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0006",
+      "match": "[State of Incorporation]",
+      "match_type": "paragraph",
+      "paragraph_index": 6,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 174,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "sentence_after": null,
+      "paragraph_context_before": "(Simple Agreement for Future Equity)",
+      "paragraph_context_after": "This Safe is one of the forms available at  and the Company and the Investor agree that neither one has modified the form, except to fill in blanks and bracketed terms.",
+      "surrounding_text": "nvestor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Ca",
+      "match_position_in_context": 100,
+      "run_information": [
+        {
+          "run_index": 26,
+          "text": "[State of Incorporation",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 27,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "THIS CERTIFIES THAT in exchange for the payment by [Investor Name] (the “Investor”) of $[_____________] (the “Purchase Amount”) on or about [Date of Safe], [Company Name], a [State of Incorporation] corporation (the “Company”), issues to the Investor the right to certain shares of the Company’s Capital Stock, subject to the terms described below.",
+      "paragraph_length": 348,
+      "llm_context": "This placeholder specifies the 'State of Incorporation' for the company. Its purpose is to identify the U.S. state under whose laws the company is legally formed and exists. The user should be asked: 'In which U.S. state is the company legally incorporated?' The value represents the name of the U.S. state where the Company is registered as a corporation. Expected data type is text (state name). It must be a valid U.S. state or commonwealth name. Examples include: 'Delaware', 'California', 'New York'. This information is legally fundamental as it dictates the corporate laws governing the company's structure, governance, and certain aspects of the SAFE itself, as mentioned in Section 3(a) regarding the Company's organization. It is related to PLACEHOLDER_0001 and PLACEHOLDER_0005 (Company Name). Validation should ensure it is a recognized U.S. state name.",
+      "is_filled": true,
+      "value": "New York",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user's response 'New york' identifies a U.S. state, which directly matches the llm_context for 'State of Incorporation'. Corrected capitalization from 'New york' to 'New York'.",
+      "filled_at": "2025-10-31 18:58:46.430215"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0007",
+      "match": "[_____________]",
+      "match_type": "paragraph",
+      "paragraph_index": 8,
+      "estimated_page_number": 1,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 35,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "The “Post-Money Valuation Cap” is $[_____________].",
+      "sentence_after": "See Section 2 for certain additional defined terms.",
+      "paragraph_context_before": "This Safe is one of the forms available at  and the Company and the Investor agree that neither one has modified the form, except to fill in blanks and bracketed terms.",
+      "paragraph_context_after": "1.\tEvents",
+      "surrounding_text": "The “Post-Money Valuation Cap” is $[_____________].  See Section 2 for certain additional defined terms.",
+      "match_position_in_context": 35,
+      "run_information": [
+        {
+          "run_index": 11,
+          "text": "$[_____________",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 12,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "The “Post-Money Valuation Cap” is $[_____________].  See Section 2 for certain additional defined terms.",
+      "paragraph_length": 104,
+      "llm_context": "This placeholder is for the 'Post-Money Valuation Cap'. Its purpose is to set a maximum valuation at which the investor's SAFE will convert into equity, providing a crucial protection for the investor. The user should be asked: 'What is the agreed-upon Post-Money Valuation Cap for this SAFE?' The value represents a specific dollar amount that serves as the upper limit for the company's valuation when calculating the conversion price per share during an Equity Financing. Expected data type is currency (number). It must be a positive numerical value, typically in USD, and usually a significant amount (e.g., millions), either an integer or with two decimal places. Examples include: '5,000,000', '10,000,000.00', '20,000,000'. This is a key economic term directly impacting the investor's potential ownership percentage and return, as it influences the 'Safe Price' and 'Liquidity Price' definitions. It is related to PLACEHOLDER_0003 (Purchase Amount). Validation should ensure it is a positive numerical value, formatted as currency.",
+      "is_filled": true,
+      "value": "100,000,000",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user's response '100 million' is a monetary value that directly matches the description of the 'Post-Money Valuation Cap', which is typically a significant amount expressed in millions, as stated in the placeholder's context. The value has been normalized to a numeric format.",
+      "filled_at": "2025-10-31 18:57:16.284653"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0008",
+      "match": "[Governing Law Jurisdiction]",
+      "match_type": "paragraph",
+      "paragraph_index": 66,
+      "estimated_page_number": 3,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 87,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "(f)\tAll rights and obligations hereunder will be governed by the laws of the State of [Governing Law Jurisdiction], without regard to the conflicts of law provisions of such jurisdiction.",
+      "sentence_after": null,
+      "paragraph_context_before": "(e)\tIn the event any one or more of the provisions of this Safe is for any reason held to be invalid, illegal or unenforceable, in whole or in part or in any respect, or in the event that any one or m",
+      "paragraph_context_after": "(g)\tThe parties acknowledge and agree that for United States federal and state income tax purposes this Safe is, and at all times has been, intended to be characterized as stock, and more particularly",
+      "surrounding_text": "\t(f)\tAll rights and obligations hereunder will be governed by the laws of the State of [Governing Law Jurisdiction], without regard to the conflicts of law provisions of such jurisdiction.",
+      "match_position_in_context": 87,
+      "run_information": [
+        {
+          "run_index": 9,
+          "text": "[Governing Law Jurisdiction",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 10,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": "JUSTIFY (3)",
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "\t(f)\tAll rights and obligations hereunder will be governed by the laws of the State of [Governing Law Jurisdiction], without regard to the conflicts of law provisions of such jurisdiction.",
+      "paragraph_length": 188,
+      "llm_context": "This placeholder specifies the 'Governing Law Jurisdiction'. Its purpose is to designate the U.S. state whose laws will be applied to interpret and enforce the terms and conditions of this SAFE agreement. The user should be asked: 'Which state's laws should govern this SAFE agreement?' The value represents the name of the U.S. state whose legal framework will control the contract. Expected data type is text (state name). It must be a valid U.S. state or commonwealth name. Examples include: 'Delaware', 'California', 'New York'. This choice is legally critical for providing certainty in dispute resolution and understanding the legal context of the agreement. While often the same as the 'State of Incorporation' (PLACEHOLDER_0006), it is not necessarily so. Validation should ensure it is a recognized U.S. state name.",
+      "is_filled": true,
+      "value": "New York",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user's response 'New york' identifies a U.S. state, which directly matches the llm_context for 'Governing Law Jurisdiction'. Corrected capitalization from 'New york' to 'New York'.",
+      "filled_at": "2025-10-31 18:58:46.430227"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0009",
+      "match": "[COMPANY]",
+      "match_type": "paragraph",
+      "paragraph_index": 72,
+      "estimated_page_number": 3,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 0,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "[COMPANY]",
+      "sentence_after": null,
+      "paragraph_context_before": null,
+      "paragraph_context_after": null,
+      "surrounding_text": "[COMPANY]",
+      "match_position_in_context": 0,
+      "run_information": [
+        {
+          "run_index": 0,
+          "text": "[",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 2,
+          "text": "]",
+          "bold": true,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": null,
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "[COMPANY]",
+      "paragraph_length": 9,
+      "llm_context": "This placeholder is for the 'COMPANY' name in the signature block. Its purpose is to formally identify the company as the signatory party. The user should be asked: 'Please confirm the full legal name of the company for the signature block. This should be consistent with the company name provided earlier in the document.' The value represents the official, registered name of the company, which will appear above the signature of its representative. Expected data type is text (name). It must be identical to PLACEHOLDER_0001 and PLACEHOLDER_0005. Examples include: 'Innovate Solutions Inc.', 'Tech Ventures LLC', 'Global Innovations Corp.'. Proper identification in the signature block is essential for the legal execution and enforceability of the agreement against the company. It is directly related to PLACEHOLDER_0001 (Company Name) and PLACEHOLDER_0005 (Company Name). Validation should ensure it's a non-empty string and matches the other 'Company Name' placeholders exactly.",
+      "is_filled": true,
+      "value": "Techsource LLC",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user provided 'Techsource LLC' which is a full legal company name, directly matching the 'COMPANY' name expected by the placeholder for the signature block.",
+      "filled_at": "2025-10-31 18:59:33.662532"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0010",
+      "match": "[name]",
+      "match_type": "paragraph",
+      "paragraph_index": 75,
+      "estimated_page_number": 3,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 1,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "[name]",
+      "sentence_after": null,
+      "paragraph_context_before": "By:",
+      "paragraph_context_after": "[title]",
+      "surrounding_text": "\t[name]",
+      "match_position_in_context": 1,
+      "run_information": [
+        {
+          "run_index": 0,
+          "text": "\t[",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 2,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": null,
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "\t[name]",
+      "paragraph_length": 7,
+      "llm_context": "This placeholder is for the 'name' of the individual signing on behalf of the company in the signature block. Its purpose is to clearly identify the authorized representative who is executing the SAFE for the company. The user should be asked: 'What is the full legal name of the individual who will sign this SAFE on behalf of the company?' The value represents the printed full name of the Company's authorized signatory. Expected data type is text (person name). It must be the legal name of an actual person. Examples include: 'John D. Smith', 'Sarah L. Chen', 'Michael A. Johnson'. This is crucial for verifying the signature and ensuring that the agreement is being entered into by an individual with the authority to bind the company. It is directly related to PLACEHOLDER_0011 (Company Signatory Title). Validation should ensure it's a non-empty string, typically a full name.",
+      "is_filled": true,
+      "value": "Sriram",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user explicitly stated 'Its me Sriram', which directly provides the name for the individual signing on behalf of the company as requested by the placeholder's context.",
+      "filled_at": "2025-10-31 18:59:13.720799"
+    },
+    {
+      "unique_id": "PLACEHOLDER_0011",
+      "match": "[title]",
+      "match_type": "paragraph",
+      "paragraph_index": 76,
+      "estimated_page_number": 3,
+      "note_about_page": "Page number is estimated. Actual pages depend on Word rendering.",
+      "position_in_paragraph": 0,
+      "position_in_document": null,
+      "sentence_before": null,
+      "sentence_with_match": "[title]",
+      "sentence_after": null,
+      "paragraph_context_before": "[name]",
+      "paragraph_context_after": "Address:",
+      "surrounding_text": "[title]",
+      "match_position_in_context": 0,
+      "run_information": [
+        {
+          "run_index": 0,
+          "text": "[",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        },
+        {
+          "run_index": 2,
+          "text": "]",
+          "bold": null,
+          "italic": null,
+          "underline": null,
+          "font_name": null,
+          "font_size": "139700"
+        }
+      ],
+      "paragraph_alignment": null,
+      "paragraph_style": "Normal",
+      "full_paragraph_text": "[title]",
+      "paragraph_length": 7,
+      "llm_context": "This placeholder is for the 'title' of the individual signing on behalf of the company in the signature block. Its purpose is to confirm the official corporate title of the signatory, thereby demonstrating their authority to bind the company to the SAFE agreement. The user should be asked: 'What is the official title of the individual who will sign this SAFE on behalf of the company?' The value represents the corporate title (e.g., CEO, President, Secretary, Authorized Signatory) of the Company's representative. Expected data type is text (job title). It must be a valid corporate title that confers authority to sign legal documents for the company. Examples include: 'Chief Executive Officer', 'President', 'Secretary', 'Authorized Signatory'. Providing an accurate title is essential for the legal enforceability of the SAFE, as it indicates proper corporate authorization. It is directly related to PLACEHOLDER_0010 (Company Signatory Name). Validation should ensure it's a non-empty string representing a corporate title.",
+      "is_filled": true,
+      "value": "Chief Executive Officer",
+      "fill_confidence": "High",
+      "fill_reasoning": "The user explicitly mentioned 'CEO', which is the official title for the individual signing on behalf of the company as requested by the placeholder's context. 'CEO' has been expanded to 'Chief Executive Officer' for formality.",
+      "filled_at": "2025-10-31 18:59:13.720825"
+    }
+  ]
+}
